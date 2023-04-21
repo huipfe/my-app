@@ -17,13 +17,15 @@ function App() {
         >
           Learn React
         </a>
+        <button class="btn btn-primary">Clique ici</button>
+        <button type="button" class="btn btn-primary btn-lg">Button</button>
       </header>
-      <ul>
+      {/* <ul>
         <li>Paris</li>
         <li>Montpellier</li>
         <li>Bordeaux</li>
         <li>Lyon</li>
-      </ul>
+      </ul> */}
     </div>
     
   );
@@ -31,3 +33,4 @@ function App() {
 
 
 export default App;
+
