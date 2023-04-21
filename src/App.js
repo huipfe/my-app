@@ -18,8 +18,16 @@ function App() {
           Learn React
         </a>
       </header>
+      <ul>
+        <li>Paris</li>
+        <li>Montpellier</li>
+        <li>Bordeaux</li>
+        <li>Lyon</li>
+      </ul>
     </div>
+    
   );
 }
+
 
 export default App;
