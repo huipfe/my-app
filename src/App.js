@@ -1,10 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import Button from './Button';
+import EmailField from './EmailField';
+import Button2 from './Button2';
+import ButtonNumberSelector from './ButtonNumberSelector';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -17,15 +21,15 @@ function App() {
         >
           Learn React
         </a>
-        <button class="btn btn-primary">Clique ici</button>
-        <button type="button" class="btn btn-primary btn-lg">Button</button>
-      </header>
-      {/* <ul>
-        <li>Paris</li>
-        <li>Montpellier</li>
-        <li>Bordeaux</li>
-        <li>Lyon</li>
-      </ul> */}
+      </header> */}
+      <div class="m-5 p-3"><Button /></div>
+
+      <div class="m-5 p-3"><EmailField /></div>
+
+      <div class="m-5 p-3"><Button2 /></div>
+
+      <div class="m-5 p-3"><ButtonNumberSelector /></div>
+
     </div>
     
   );
