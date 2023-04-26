@@ -1,0 +1,21 @@
+.Article {
+    display: flex;
+    border: 1px solid #000;
+    width: 1200px;
+    margin: 20px auto;
+}
+ 
+.Article--photo {
+    height: 200px;
+}
+ 
+.Article__main {
+    text-align: center;
+    margin: auto;
+    display: flex;
+}
+ 
+.Article__Text {
+    margin: auto 20px;
+    width: 90%;
+}

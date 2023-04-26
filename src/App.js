@@ -7,23 +7,17 @@ import ButtonNumberSelector from './ButtonNumberSelector';
 import Calculatrice from './Calculatrice';
 import Shop from './Shop/Shop.js';
 
+import ListArticles from './List_articles/ListArticles.js';
+
+
 function App() {
   return (
     <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
+
+      <section class="m-5 p-3">
+        <ListArticles/>
+      </section>
+
       <div class="m-5 p-3"><Button /></div>
 
       <div class="m-5 p-3"><EmailField /></div>
