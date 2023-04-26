@@ -1,0 +1,50 @@
+.Shop {
+  width: 40rem;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 4px;
+}
+.Shop ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.Shop ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 3rem;
+  margin: 0.5rem 0;
+  padding: 0 0.75rem;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+.Shop ul li.Products {
+  background: hsla(256, 86%, 43%, 0.1);
+  color: hsl(256, 86%, 43%);
+}
+.Shop ul li.CartItems {
+  background: hsla(0, 0%, 27%, 0.1);
+  color: hsl(0, 0%, 27%);
+}
+.Shop button {
+  border: 0;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.Shop button:disabled {
+  background: lightgray;
+  cursor: default;
+}
+.Shop button.AddToCart {
+  background: hsl(256, 86%, 43%);
+  color: #fff;
+}
+.Shop button.RemoveFromCart {
+  background: hsl(345, 86%, 43%);
+  color: #fff;
+}/*# sourceMappingURL=Shop.css.map */

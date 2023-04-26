@@ -1,0 +1,65 @@
+$white: #fff;
+$gray: hsla(0, 0%, 27%, 0.1);
+$gray-text: hsl(0, 0%, 27%);
+$green: hsla(256, 86%, 43%, 0.1);
+$green-text: hsl(256, 86%, 43%);
+$red: hsl(345, 86%, 43%);
+
+.Shop {
+  width: 40rem;
+  background: $white;
+  padding: 1rem;
+  border-radius: 4px;
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      min-height: 3rem;
+      margin: 0.5rem 0;
+      padding: 0 0.75rem;
+      border-radius: 4px; 
+      font-weight: bold;
+      font-size: 0.85rem;
+      
+      &.Products {
+        background: $green;
+        color: $green-text;
+      }
+      
+      &.CartItems {
+        background: $gray;
+        color: $gray-text;
+      }
+    }
+  }
+  
+  button {
+    border: 0;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    
+    &:disabled {
+      background: lightgray;
+      cursor: default;
+    }
+    
+    &.AddToCart {
+      background: $green-text;
+      color: $white;
+    }
+    
+    &.RemoveFromCart {
+      background: $red;
+      color: $white;
+    }
+  }
+}

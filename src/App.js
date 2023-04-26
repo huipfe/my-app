@@ -5,6 +5,7 @@ import EmailField from './EmailField';
 import Button2 from './Button2';
 import ButtonNumberSelector from './ButtonNumberSelector';
 import Calculatrice from './Calculatrice';
+import Shop from './Shop/Shop.js';
 
 function App() {
   return (
@@ -32,6 +33,12 @@ function App() {
       <div class="m-5 p-3"><ButtonNumberSelector /></div>
 
       <div class="m-5 p-3"><Calculatrice /></div>
+
+      {/* Section Shop */}
+      <section class="m-5 p-3">
+        <Shop />
+      </section>
+
     </div>
     
   );
