@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Button from './Button';
 import EmailField from './EmailField';
@@ -9,6 +9,7 @@ import Shop from './Shop/Shop.js';
 
 import ListArticles from './List_articles/ListArticles.js';
 
+// import Tabs from './Tabs/Tabs.js';
 
 function App() {
   return (
@@ -33,6 +34,9 @@ function App() {
         <Shop />
       </section>
 
+      <div>
+        {/* <Tabs tabs={Tabs} /> */}
+      </div>
     </div>
     
   );
