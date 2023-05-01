@@ -6,9 +6,12 @@ import Button2 from './Button2';
 import ButtonNumberSelector from './ButtonNumberSelector';
 import Calculatrice from './Calculatrice';
 import Shop from './Shop/Shop.js';
+
 import Profile from './Profile/Profile';
+import HarveyPicture from './Profile/HarveyPicture.jpg'
 
 import ListArticles from './List_articles/ListArticles.js';
+
 import Tabs from './Tabs/Tabs.js';
 
 function App() {
@@ -21,7 +24,7 @@ function App() {
       city: 'Nashua'
     },
     age: 43,
-    picture: "HarveyPicture.jpg",
+    picture: HarveyPicture,
     interests: [
       'Cinematic FPV drone',
       'Hiking',
