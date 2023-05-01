@@ -6,12 +6,28 @@ import Button2 from './Button2';
 import ButtonNumberSelector from './ButtonNumberSelector';
 import Calculatrice from './Calculatrice';
 import Shop from './Shop/Shop.js';
+import Profile from './Profile/Profile';
 
 import ListArticles from './List_articles/ListArticles.js';
-
-// import Tabs from './Tabs/Tabs.js';
+import Tabs from './Tabs/Tabs.js';
 
 function App() {
+
+  const user = {
+    firstname: 'Harvey',
+    lastname: 'Kunkel',
+    location: {
+      country: 'United States',
+      city: 'Nashua'
+    },
+    age: 43,
+    picture: "HarveyPicture.jpg",
+    interests: [
+      'Cinematic FPV drone',
+      'Hiking',
+      'Music'
+    ]
+  };
   return (
     <div className="App">
 
@@ -35,8 +51,16 @@ function App() {
       </section>
 
       <div>
-        {/* <Tabs tabs={Tabs} /> */}
+        <Tabs tabs={Tabs} />
       </div>
+
+      <>
+        <Profile user={user} />
+        
+        {/* Correction */}
+        {/* <Profile {...user} /> */}
+        
+      </>
     </div>
     
   );
