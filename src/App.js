@@ -14,6 +14,9 @@ import ListArticles from './List_articles/ListArticles.js';
 
 import Tabs from './Tabs/Tabs.js';
 
+import StyledComponents from './Styled/StyledComponents';
+
+
 function App() {
 
   const user = {
@@ -31,6 +34,8 @@ function App() {
       'Music'
     ]
   };
+
+
   return (
     <div className="App">
 
@@ -62,7 +67,10 @@ function App() {
         
         {/* Correction */}
         {/* <Profile {...user} /> */}
-        
+
+
+      <StyledComponents/>
+
       </>
     </div>
     
