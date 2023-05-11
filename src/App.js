@@ -14,10 +14,40 @@ import ListArticles from './List_articles/ListArticles.js';
 
 import Tabs from './Tabs/Tabs.js';
 
-import StyledComponents from './Styled/StyledComponents';
+
+// import StyledComponents from './Styled/StyledComponents';
+
+import Modal from './Styled/StyledComponents';
+import styled from 'styled-components';
+import Landscape from './Styled/canards_de_bain.png';
+import { ThemeProvider } from 'styled-components';
+import theme from './Styled/theme';
+
 
 
 function App() {
+  const Button = styled.button`
+  border: 0;
+  border-radius: 6px;
+  padding: 1rem 2rem;
+  color: ${theme.modalTextColor};
+  background: ${theme.buttonColor};
+  font-weight: bold;
+  text-transform: uppercase;
+`;
+
+  const GhostButton = styled(Button)`
+  background: none;
+  color: ${props => props.theme.fontColor};
+`;
+  const Image = styled.img`
+  display: block;
+  width: 80%;
+  height: auto;
+  border-radius: 6px;
+  margin: 1rem auto;
+`;
+
 
   const user = {
     firstname: 'Harvey',
@@ -35,11 +65,15 @@ function App() {
     ]
   };
 
+  <GhostButton>Fermer</GhostButton>
+  const modalActions = <Button>Ok</Button>;
+
 
   return (
+    <ThemeProvider theme={theme}>
     <div className="App">
 
-      <section class="m-5 p-3">
+      {/* <section class="m-5 p-3">
         <ListArticles/>
       </section>
 
@@ -53,27 +87,33 @@ function App() {
 
       <div class="m-5 p-3"><Calculatrice /></div>
 
-      {/* Section Shop */}
+
       <section class="m-5 p-3">
         <Shop />
-      </section>
+      </section> 
 
       <div>
         <Tabs tabs={Tabs} />
-      </div>
+      </div> */}
 
       <>
-        <Profile user={user} />
+        {/* <Profile user={user} /> */}
         
         {/* Correction */}
         {/* <Profile {...user} /> */}
 
 
-      <StyledComponents/>
-
+      {/* <StyledComponents/> */}
+        <Modal
+          title="Je suis un titre"
+          actions={modalActions}
+        >
+          <Image src={Landscape} alt="landscape" />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent molestie justo et nunc dictum, non fermentum mi ultricies. Nunc malesuada hendrerit fermentum. Donec congue, lacus id tincidunt pharetra, risus arcu molestie sem, rhoncus suscipit nisl tellus a nulla. Sed quis ante porttitor, tempus libero sed, elementum risus.
+        </Modal>
       </>
     </div>
-    
+    </ThemeProvider>
   );
 }
 
